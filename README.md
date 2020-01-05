@@ -20,6 +20,11 @@ docker run --name project -p 127.0.0.1:6379:6379 -d redis
 ```
 To start Celery, execute:
 ```
-celery -A project worker -L INFO
+celery -A project worker -l INFO
 ```
 Celery Worker will start and wait for tasks.
+
+To start Celery Beat, execute:
+```
+celery -A project beat -l INFO
+```

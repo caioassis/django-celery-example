@@ -28,3 +28,4 @@ To start Celery Beat, execute:
 ```
 celery -A project beat -l INFO
 ```
+> Important: As of Celery v4.4, celery is not using timezone information to run the tasks, meaning that you'll have to set the hours and days taking in consideration UTC time.

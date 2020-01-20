@@ -18,6 +18,6 @@ app.conf.beat_schedule = {
 }
 
 # Timezone can be changed for whatever timezone you're in.
-app.conf.timezone = 'Brazil/East'
+app.conf.timezone = 'UTC'
 
 app.autodiscover_tasks()
